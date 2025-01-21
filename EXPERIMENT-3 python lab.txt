@@ -1,0 +1,125 @@
+EXPERIMENT-3
+
+#1)
+numb=int(input("Enter the number:"))
+if numb%3==0 & numb%5==0 :
+    print("The number is divisible by both 3 and 5")
+else:
+    print("the number is not divisible by both 3 and 5")
+
+
+#2)
+number=int(input("Enter the number:"))
+if number%5==0 :
+    print("number is a multiple of 5")
+else:
+    print("the number is not a multiple of 5")
+
+
+#3)
+num1=int(input("Enter the first number:"))
+num2=int(input("Enter the second number:"))
+if num1>num2:
+    print("first number is greater than the second number ")
+if num2>num1:
+    print("second number is greater than the first number ")
+else:
+    print("numbers are equal")
+
+
+#4)
+num1=int(input("Enter the first number:"))
+num2=int(input("Enter the second number:"))
+num3=int(input("Enter the third number:"))
+if num1>num2 & num1>num3:
+    print("third number is the greatest of all")
+if num2>num1 & num2>num3:
+    print("second number is the greatest of all")
+else:
+    print("third number is the greatest of all")
+
+
+#5)
+print("----CHECKING WHETHER THE EQUATION HAS REAL ROOTS OR NOT----\n")
+print("The general form of a quadratic equation: ax^2+bx+c\n")
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=int(input("Enter c:"))
+d=((b*b)-(4*a*c))
+if d>0:
+    print("the quadratic equation has real roots")
+else:
+    print("the quadratic equation has imaginary roots")
+print("---DISPLAYING THE ROOTS---\n")
+root1=(-b+(d)**0.5)/2*a
+root2=(-b-(d)**0.5)/2*a
+print("the first root of the quadratic equation is ",root1)
+print("the second root of the quadratic equation is",root2)
+
+
+#6)
+days=int(input("enter the number of days in the specific year:"))
+if(days==366):
+    print("the year you are reffering to is a leap year")
+elif(days==365):
+    print("the year you are reffering to is not a leap year")
+year=int(input("enter the respective year:"))
+if(year%400==0)and(year%100==0):
+    print("the entered year is a leap year")
+elif(year%4==0)and(year%100!=0):
+    print("the entered year is a leap year")
+else:
+    print("the entered year is not a leap year")
+
+
+
+#7)
+day=int(input("Enter the day:"))
+month=int(input("Enter the month:"))
+year=int(input("Enter the year:"))
+print("--ENTERED DATE--\n")
+print("day=",day,"month=",month,"year=",year)
+print("---NEXT DATE---")
+print("day=",day+1,"month=",month,"year=",year)
+
+
+#8)
+name = str(input("Enter the name: "))
+print("Name:\n", name)
+roll_no = input("Enter the roll number: ")
+print("Roll No.:", roll_no)
+sem = 1
+print("Sem:", sem)
+print("Enter subject marks (out of 100):")
+maths = int(input("Maths: "))
+chemistry = int(input("Chemistry: "))
+physics = int(input("Physics: "))
+biology = int(input("Biology: "))
+english = int(input("English: "))
+print("Marks:")
+print("Maths:", maths)
+print("Chemistry:", chemistry)
+print("Physics:", physics)
+print("Biology:", biology)
+print("English:", english)
+total_marks = maths + chemistry + physics + biology + english
+percentage = (total_marks / 500) * 100
+cgpa = percentage / 10
+print(f"Percentage: {percentage:.2f}%")
+print(f"CGPA: {cgpa:.2f}")
+if 0 <= cgpa <= 3.4:
+    print("F grade!")
+elif 3.5 <= cgpa <= 5:
+    print("C+ grade!")
+elif 5.1 <= cgpa <= 6:
+    print("B grade!")
+elif 6.1 <= cgpa <= 7:
+    print("B+ grade!")
+elif 7.1 <= cgpa <= 8:
+    print("A grade!")
+elif 8.1 <= cgpa <= 9:
+    print("A+ grade!")
+elif 9.1 <= cgpa <= 10:
+    print("O grade!")
+else:
+    print("Invalid CGPA!")
